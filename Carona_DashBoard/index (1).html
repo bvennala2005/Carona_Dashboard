@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>COVID-19 Dashboard</title>
+<link rel="stylesheet" href="styles.css">
+
+<!-- Chart.js -->
+<!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
+
+</head>
+
+<body>
+
+<h1>COVID-19 Analysis Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h2>Total Cases</h2>
+<p id="cases">Loading...</p>
+</div>
+
+<div class="card">
+<h2>Total Recovered</h2>
+<p id="recovered">Loading...</p>
+</div>
+
+<div class="card">
+<h2>Total Deaths</h2>
+<p id="deaths">Loading...</p>
+</div>
+
+</div>
+
+
+
+<input type="text" id="searchBox" placeholder="Search Country..." onkeyup="searchCountry()">
+
+<table id="covidTable">
+
+<thead>
+<tr>
+<th>S.No</th>
+<th>Country</th>
+<th>Total Cases</th>
+<th>Recovered</th>
+<th>Deaths</th>
+<th>Active</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+</tbody>
+
+</table>
+
+<!--<div class="chart-container">
+<canvas id="covidChart"></canvas>
+</div>-->
+
+<script src="script.js"></script>
+
+</body>
+</html>
